@@ -14,7 +14,7 @@ export const ContactSection = () => {
               Let's Connect
             </div>
             <h2 className="mb-8 text-5xl uppercase md:text-6xl lg:text-7xl leading-[0.9]">
-              <span className="gradient-text">Reach Out</span>
+              <span className="text-white">Reach</span> <span className="gradient-text">Out</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-md">
               If any of this resonated with you, I'd love to hear your perspective. Meaningful work starts with meaningful conversations.
