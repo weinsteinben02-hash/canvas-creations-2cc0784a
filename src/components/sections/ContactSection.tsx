@@ -16,9 +16,19 @@ export const ContactSection = () => {
             <h2 className="mb-8 text-5xl uppercase md:text-6xl lg:text-7xl leading-[0.9]">
               <span className="text-white">Reach</span> <span className="gradient-text">Out</span>
             </h2>
-            <p className="text-lg text-muted-foreground max-w-md">
+            <p className="text-lg text-muted-foreground max-w-md mb-8">
               If any of this resonated with you, I'd love to hear your perspective. Meaningful work starts with meaningful conversations.
             </p>
+            
+            {/* Decorative image */}
+            <div className="relative hidden lg:block">
+              <img 
+                src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?w=500&h=300&fit=crop"
+                alt="Workspace"
+                className="w-full h-48 object-cover rounded-lg border border-border/50 opacity-60"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background rounded-lg" />
+            </div>
           </div>
 
           <div className="flex flex-col justify-center">
