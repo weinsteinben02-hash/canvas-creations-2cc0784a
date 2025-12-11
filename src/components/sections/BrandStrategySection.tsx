@@ -1,49 +1,54 @@
-const strategies = [
+const strategyElements = [
   {
-    number: "01",
-    title: "Discovery",
-    description: "Deep dive into your brand's DNA, values, audience, and market position.",
+    label: "Ambition",
+    description: "The big-picture goal driving every decision forward.",
   },
   {
-    number: "02",
-    title: "Positioning",
-    description: "Crafting a distinctive market position that resonates with your target audience.",
+    label: "Tension",
+    description: "The challenge or friction that creates opportunity.",
   },
   {
-    number: "03",
-    title: "Identity",
-    description: "Building visual systems that embody your brand's personality and values.",
+    label: "Audience",
+    description: "Understanding who we're speaking to and why they care.",
   },
   {
-    number: "04",
-    title: "Execution",
-    description: "Comprehensive brand guidelines ensuring consistency across all touchpoints.",
+    label: "Purpose",
+    description: "The deeper meaning that gives the brand its soul.",
+  },
+  {
+    label: "Pillars",
+    description: "Core principles that guide every brand expression.",
+  },
+  {
+    label: "Personality",
+    description: "The distinct voice and character that makes it human.",
   },
 ];
 
 export const BrandStrategySection = () => {
   return (
-    <section id="strategy" className="section-padding bg-secondary/50">
+    <section id="strategy" className="section-padding">
       <div className="mx-auto max-w-6xl">
         <div className="mb-16">
-          <p className="mb-2 font-medium text-primary">How I Work</p>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl">
+          <p className="mb-2 font-medium text-accent">Framework</p>
+          <h2 className="text-4xl uppercase md:text-5xl lg:text-6xl">
             Brand Strategy
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
-          {strategies.map((item, index) => (
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {strategyElements.map((item, index) => (
             <div
-              key={item.number}
-              className="group relative rounded-2xl bg-card p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
-              style={{ animationDelay: `${index * 100}ms` }}
+              key={item.label}
+              className="group relative rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:border-accent hover:shadow-lg"
             >
-              <span className="mb-4 block text-5xl font-bold text-primary/20 transition-colors group-hover:text-primary/40">
-                {item.number}
-              </span>
-              <h3 className="mb-3 text-2xl">{item.title}</h3>
-              <p className="text-muted-foreground">{item.description}</p>
+              <div className="mb-3 inline-block rounded-full bg-accent/10 px-3 py-1">
+                <span className="text-xs font-semibold uppercase tracking-wider text-accent">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </div>
+              <h3 className="mb-2 text-xl uppercase">{item.label}</h3>
+              <p className="text-sm text-muted-foreground">{item.description}</p>
             </div>
           ))}
         </div>

@@ -1,80 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
-
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 220 20% 10%;
+    /* Deep Navy + Soft White + Muted Orange + Slate Gray + Soft Sky Blue */
+    --background: 210 40% 98%; /* Soft white */
+    --foreground: 220 45% 15%; /* Deep navy */
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card-foreground: 220 45% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover-foreground: 220 45% 15%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 220 45% 20%; /* Deep navy */
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 20% 10%;
+    --secondary: 210 20% 94%;
+    --secondary-foreground: 220 45% 15%;
 
-    --accent: 45 100% 60%;
-    --accent-foreground: 220 20% 10%;
+    --muted: 215 20% 90%;
+    --muted-foreground: 215 20% 45%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 10% 45%;
+    --accent: 25 70% 55%; /* Muted orange */
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 262 83% 58%;
+    --border: 215 25% 85%;
+    --input: 215 25% 85%;
+    --ring: 220 45% 20%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Custom colors */
+    --slate: 215 20% 55%; /* Slate gray */
+    --sky: 200 60% 75%; /* Soft sky blue */
+
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 220 45% 15%;
+    --sidebar-primary: 220 45% 20%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 210 20% 94%;
+    --sidebar-accent-foreground: 220 45% 15%;
+    --sidebar-border: 215 25% 85%;
+    --sidebar-ring: 220 45% 20%;
   }
 
   .dark {
-    --background: 220 20% 6%;
-    --foreground: 0 0% 98%;
+    --background: 220 45% 12%;
+    --foreground: 210 40% 98%;
 
-    --card: 220 20% 10%;
-    --card-foreground: 0 0% 98%;
+    --card: 220 45% 15%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 220 20% 10%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 220 45% 15%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 262 83% 65%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 25 70% 55%;
+    --primary-foreground: 220 45% 12%;
 
-    --secondary: 220 20% 14%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 220 40% 20%;
+    --secondary-foreground: 210 40% 98%;
 
-    --accent: 45 100% 60%;
-    --accent-foreground: 220 20% 10%;
+    --muted: 220 40% 25%;
+    --muted-foreground: 215 20% 65%;
 
-    --muted: 220 20% 14%;
-    --muted-foreground: 220 10% 60%;
+    --accent: 200 60% 65%;
+    --accent-foreground: 220 45% 12%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
-    --ring: 262 83% 65%;
+    --border: 220 40% 25%;
+    --input: 220 40% 25%;
+    --ring: 25 70% 55%;
+
+    --slate: 215 20% 65%;
+    --sky: 200 60% 65%;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -90,11 +96,11 @@
 
 @layer components {
   .section-padding {
-    @apply px-6 py-24 md:px-12 lg:px-24 lg:py-32;
+    @apply px-6 py-24 md:px-12 md:py-32 lg:px-24;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-accent to-sky bg-clip-text text-transparent;
   }
 
   .card-hover {
@@ -115,5 +121,5 @@ html {
 
 /* Selection */
 ::selection {
-  @apply bg-primary/20 text-foreground;
+  @apply bg-accent/20 text-foreground;
 }

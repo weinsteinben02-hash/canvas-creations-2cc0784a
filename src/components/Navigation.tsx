@@ -2,8 +2,11 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
+  { label: "About", href: "#about" },
   { label: "Strategy", href: "#strategy" },
+  { label: "Behaviours", href: "#behaviours" },
   { label: "Projects", href: "#projects" },
+  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -14,7 +17,7 @@ export const Navigation = () => {
     <>
       {/* Desktop nav */}
       <nav className="fixed left-0 right-0 top-0 z-50 hidden items-center justify-between bg-background/80 px-12 py-6 backdrop-blur-md md:flex">
-        <a href="#" className="text-xl font-bold">
+        <a href="#" className="font-display text-xl font-bold uppercase">
           BW
         </a>
         <div className="flex items-center gap-8">
@@ -52,7 +55,7 @@ export const Navigation = () => {
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-3xl font-bold transition-colors hover:text-primary"
+                className="block font-display text-3xl font-bold uppercase transition-colors hover:text-accent"
               >
                 {item.label}
               </a>
