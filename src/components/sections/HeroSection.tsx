@@ -1,4 +1,5 @@
 import { ArrowDown } from "lucide-react";
+import benProfile from "@/assets/ben-profile.png";
 
 export const HeroSection = () => {
   return (
@@ -50,9 +51,9 @@ export const HeroSection = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl rounded-full" />
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face"
-                alt="Profile placeholder"
-                className="relative w-64 h-80 md:w-80 md:h-96 object-cover rounded-lg border border-border/50 shadow-2xl"
+                src={benProfile}
+                alt="Ben Weinstein"
+                className="relative w-64 h-80 md:w-80 md:h-96 object-cover object-top rounded-lg border border-border/50 shadow-2xl"
               />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-lg flex items-center justify-center">
                 <span className="text-primary text-xs font-medium tracking-wider uppercase">2024</span>
