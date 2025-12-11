@@ -14,18 +14,16 @@ export const ContactSection = () => {
               Let's Connect
             </div>
             <h2 className="mb-8 text-5xl uppercase md:text-6xl lg:text-7xl leading-[0.9]">
-              Ready to
-              <br />
-              <span className="gradient-text">collaborate?</span>
+              <span className="gradient-text">Reach Out</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-md">
-              I'm always open to discussing new projects, creative ideas, or opportunities to build something meaningful together.
+              If any of this resonated with you, I'd love to hear your perspective. Meaningful work starts with meaningful conversations.
             </p>
           </div>
 
           <div className="flex flex-col justify-center">
             <a
-              href="mailto:ben@weinstein.com"
+              href="mailto:weinstein.be@northeastern.edu"
               className="group flex items-center gap-6 p-6 md:p-8 bg-card border border-border transition-all duration-300 hover:border-primary/50 hover:bg-secondary/30"
             >
               <div className="flex h-14 w-14 items-center justify-center bg-primary text-primary-foreground">
@@ -33,21 +31,18 @@ export const ContactSection = () => {
               </div>
               <div className="flex-1">
                 <p className="text-sm text-muted-foreground mb-1">Email me at</p>
-                <p className="text-xl font-medium text-foreground">ben@weinstein.com</p>
+                <p className="text-xl font-medium text-foreground">weinstein.be@northeastern.edu</p>
               </div>
               <ArrowUpRight className="h-6 w-6 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-primary" />
             </a>
 
             <div className="mt-6 flex flex-wrap gap-3">
-              {["LinkedIn", "Twitter", "Dribbble"].map((platform) => (
-                <a
-                  key={platform}
-                  href="#"
-                  className="px-5 py-2.5 text-sm font-medium border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary"
-                >
-                  {platform}
-                </a>
-              ))}
+              <a
+                href="#"
+                className="px-5 py-2.5 text-sm font-medium border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>
