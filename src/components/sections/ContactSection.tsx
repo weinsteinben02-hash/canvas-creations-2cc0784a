@@ -38,7 +38,9 @@ export const ContactSection = () => {
 
             <div className="mt-6 flex flex-wrap gap-3">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/ben-weinstein-309087350/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-5 py-2.5 text-sm font-medium border border-border text-muted-foreground transition-all hover:border-primary hover:text-primary"
               >
                 LinkedIn
