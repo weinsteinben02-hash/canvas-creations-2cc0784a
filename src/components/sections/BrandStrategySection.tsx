@@ -6,7 +6,7 @@ const strategyElements = [
   },
   {
     label: "Purpose",
-    description: "To bring sensitivity, clarity, and empathy into branding, making people feel seen and understood",
+    description: "To bring sensitivity, clarity, and empathy into branding, making people feel seen and understood.",
     size: "large",
   },
   {
@@ -21,12 +21,12 @@ const strategyElements = [
   },
   {
     label: "Pillars",
-    description: "Observation, Empathy, Clarity, Adaptability, Curiosity",
+    description: "Observation, Empathy, Clarity, Adaptability, Curiosity.",
     size: "small",
   },
   {
     label: "Personality",
-    description: "Enthusiastic, thoughtful, aware, detail-oriented, purpose-driven",
+    description: "Enthusiastic, thoughtful, aware, detail-oriented, purpose-driven.",
     size: "small",
   },
 ];
