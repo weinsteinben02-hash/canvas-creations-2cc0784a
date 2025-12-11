@@ -1,13 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Navigation } from "@/components/Navigation";
+import { HeroSection } from "@/components/sections/HeroSection";
+import { BrandStrategySection } from "@/components/sections/BrandStrategySection";
+import { BehavioursSection } from "@/components/sections/BehavioursSection";
+import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { ExperienceSection } from "@/components/sections/ExperienceSection";
+import { ContactSection } from "@/components/sections/ContactSection";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="overflow-x-hidden">
+      <Navigation />
+      <HeroSection />
+      <section id="strategy">
+        <BrandStrategySection />
+      </section>
+      <section id="behaviours">
+        <BehavioursSection />
+      </section>
+      <section id="projects">
+        <ProjectsSection />
+      </section>
+      <section id="experience">
+        <ExperienceSection />
+      </section>
+      <section id="contact">
+        <ContactSection />
+      </section>
+    </main>
   );
 };
 
