@@ -1,3 +1,6 @@
+import benChildhood1 from "@/assets/ben-childhood-1.jpg";
+import benChildhood2 from "@/assets/ben-childhood-2.jpg";
+
 export const AboutMeSection = () => {
   return (
     <section id="story" className="section-padding relative overflow-hidden">
@@ -24,14 +27,24 @@ export const AboutMeSection = () => {
               I've always experienced the world differently. When you move through environments that aren't always built for you, you learn to read people differently: tone, tension, and intention.
             </p>
             
-            {/* Image placeholder */}
-            <div className="relative my-12">
-              <img 
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop"
-                alt="Working environment"
-                className="w-full h-64 object-cover rounded-lg border border-border/50"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent rounded-lg" />
+            {/* Childhood photos */}
+            <div className="relative my-12 grid grid-cols-2 gap-4">
+              <div className="relative">
+                <img 
+                  src={benChildhood1}
+                  alt="Ben as a child"
+                  className="w-full h-64 object-cover rounded-lg border border-border/50"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent rounded-lg" />
+              </div>
+              <div className="relative">
+                <img 
+                  src={benChildhood2}
+                  alt="Ben playing baseball as a child"
+                  className="w-full h-64 object-cover rounded-lg border border-border/50"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent rounded-lg" />
+              </div>
             </div>
             
             <div className="w-16 h-px bg-primary/50" />
