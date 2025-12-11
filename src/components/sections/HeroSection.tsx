@@ -1,80 +1,46 @@
-import { MondrianBlock } from "@/components/MondrianBlock";
+import { ArrowDown } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-background p-4 md:p-8">
-      {/* Main composition */}
-      <div className="relative mx-auto h-[90vh] max-w-7xl">
-        {/* Large red block - top left */}
-        <MondrianBlock
-          color="red"
-          float="slow"
-          large
-          className="absolute left-0 top-0 h-[45%] w-[40%] md:left-[5%] md:w-[35%]"
-        />
-
-        {/* Blue block - top right */}
-        <MondrianBlock
-          color="blue"
-          float="medium"
-          delay={1}
-          large
-          className="absolute right-0 top-[10%] h-[30%] w-[35%] md:right-[10%] md:w-[25%]"
-        />
-
-        {/* Yellow block - bottom right */}
-        <MondrianBlock
-          color="yellow"
-          float="fast"
-          delay={2}
-          large
-          className="absolute bottom-[15%] right-[5%] h-[25%] w-[30%] md:right-[15%]"
-        />
-
-        {/* White block with name - center */}
-        <MondrianBlock
-          color="white"
-          float="slow"
-          delay={3}
-          large
-          className="absolute left-[10%] top-[35%] z-10 flex h-auto w-[80%] flex-col justify-center p-6 md:left-[20%] md:w-[60%] md:p-12"
-        >
-          <h1 className="text-5xl leading-none text-foreground md:text-8xl lg:text-9xl">
-            Creative
-            <br />
-            <span className="text-mondrian-red">Brand</span>
-            <br />
-            Designer
-          </h1>
-          <p className="mt-4 text-lg text-muted-foreground md:mt-6 md:text-xl">
-            Building bold identities that stand out
-          </p>
-        </MondrianBlock>
-
-        {/* Small decorative blocks */}
-        <MondrianBlock
-          color="blue"
-          float="fast"
-          className="absolute bottom-[30%] left-[5%] h-16 w-16 md:h-24 md:w-24"
-        />
-        <MondrianBlock
-          color="red"
-          float="medium"
-          delay={1}
-          className="absolute right-[30%] top-[5%] h-12 w-20 md:h-16 md:w-32"
-        />
-        <MondrianBlock
-          color="yellow"
-          float="slow"
-          delay={2}
-          className="absolute bottom-[5%] left-[30%] h-20 w-12 md:h-28 md:w-16"
-        />
-
-        {/* Vertical line */}
-        <div className="absolute bottom-0 left-[60%] top-[70%] w-[6px] bg-mondrian-black md:w-[10px]" />
+    <section className="relative flex min-h-screen flex-col justify-center section-padding">
+      {/* Background accent */}
+      <div className="absolute right-0 top-0 h-[60%] w-[40%] bg-gradient-to-bl from-primary/10 to-transparent" />
+      <div className="absolute bottom-0 left-0 h-[40%] w-[30%] bg-gradient-to-tr from-accent/10 to-transparent" />
+      
+      <div className="relative z-10 max-w-5xl">
+        <p className="mb-4 text-lg font-medium text-primary md:text-xl">
+          Brand Designer & Strategist
+        </p>
         
-        {/* Horizontal line */}
-        <div className="absolute left-[40%] right-0 top-[60%] h-[6px] bg-mondrian-black md:h-[10px]" />
+        <h1 className="mb-6 text-6xl leading-[0.9] md:text-8xl lg:text-9xl">
+          <span className="font-extrabold">Ben</span>
+          <br />
+          <span className="font-extrabold gradient-text">Weinstein</span>
+        </h1>
+        
+        <p className="max-w-xl text-lg text-muted-foreground md:text-xl">
+          Crafting bold brand identities that cut through the noise and leave a lasting impression.
+        </p>
+        
+        <div className="mt-12 flex flex-wrap gap-4">
+          <a
+            href="#projects"
+            className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg"
+          >
+            View Work
+          </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-4 font-medium text-foreground transition-all hover:border-primary hover:text-primary"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </div>
+      
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <ArrowDown className="h-6 w-6 text-muted-foreground" />
       </div>
     </section>
   );
