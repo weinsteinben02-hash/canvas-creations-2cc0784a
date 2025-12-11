@@ -13,9 +13,9 @@ export const HeroSection = () => {
       <div className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-primary/20 to-transparent opacity-30" />
       
       <div className="relative z-10 max-w-6xl mx-auto w-full">
-        <div className="grid lg:grid-cols-12 gap-8 items-end">
-          {/* Main content - takes up most of the space */}
-          <div className="lg:col-span-8">
+        <div className="grid lg:grid-cols-12 gap-8 items-center">
+          {/* Main content */}
+          <div className="lg:col-span-7">
             <p className="mb-6 text-sm font-medium tracking-[0.3em] uppercase text-primary">
               Student & Creative Strategist
             </p>
@@ -24,28 +24,38 @@ export const HeroSection = () => {
               <span className="block font-bold text-foreground">Ben</span>
               <span className="block font-bold gradient-text">Weinstein</span>
             </h1>
+            
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-md mb-8">
+              Exploring the space between brand intention and human emotion
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#story"
+                className="inline-flex items-center justify-center gap-2 bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20"
+              >
+                My Story
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center gap-2 border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-primary hover:text-primary"
+              >
+                Get in Touch
+              </a>
+            </div>
           </div>
           
-          {/* Sidebar tagline */}
-          <div className="lg:col-span-4 lg:pb-8">
-            <div className="lg:border-l lg:border-border lg:pl-8">
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-sm">
-                Exploring the space between brand intention and human emotion
-              </p>
-              
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <a
-                  href="#story"
-                  className="inline-flex items-center justify-center gap-2 bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg hover:shadow-primary/20"
-                >
-                  My Story
-                </a>
-                <a
-                  href="#contact"
-                  className="inline-flex items-center justify-center gap-2 border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:border-primary hover:text-primary"
-                >
-                  Get in Touch
-                </a>
+          {/* Profile image placeholder */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 to-accent/20 blur-2xl rounded-full" />
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=600&fit=crop&crop=face"
+                alt="Profile placeholder"
+                className="relative w-64 h-80 md:w-80 md:h-96 object-cover rounded-lg border border-border/50 shadow-2xl"
+              />
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-lg flex items-center justify-center">
+                <span className="text-primary text-xs font-medium tracking-wider uppercase">2024</span>
               </div>
             </div>
           </div>

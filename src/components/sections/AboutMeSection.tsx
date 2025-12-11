@@ -24,6 +24,16 @@ export const AboutMeSection = () => {
               I've always experienced the world differently. When you move through environments that aren't always built for you, you learn to read people differently: tone, tension, and intention.
             </p>
             
+            {/* Image placeholder */}
+            <div className="relative my-12">
+              <img 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop"
+                alt="Working environment"
+                className="w-full h-64 object-cover rounded-lg border border-border/50"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent rounded-lg" />
+            </div>
+            
             <div className="w-16 h-px bg-primary/50" />
             
             <p className="text-lg text-muted-foreground leading-relaxed">
