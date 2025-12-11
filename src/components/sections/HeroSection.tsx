@@ -4,18 +4,18 @@ export const HeroSection = () => {
   return (
     <section className="relative flex min-h-screen flex-col justify-center section-padding">
       {/* Background accent */}
-      <div className="absolute right-0 top-0 h-[60%] w-[40%] bg-gradient-to-bl from-primary/10 to-transparent" />
+      <div className="absolute right-0 top-0 h-[60%] w-[40%] bg-gradient-to-bl from-sky/20 to-transparent" />
       <div className="absolute bottom-0 left-0 h-[40%] w-[30%] bg-gradient-to-tr from-accent/10 to-transparent" />
       
       <div className="relative z-10 max-w-5xl">
-        <p className="mb-4 text-lg font-medium text-primary md:text-xl">
-          Brand Designer & Strategist
+        <p className="mb-4 text-lg font-medium text-accent md:text-xl">
+          Student & Creative Strategist
         </p>
         
-        <h1 className="mb-6 text-6xl leading-[0.9] md:text-8xl lg:text-9xl">
-          <span className="font-extrabold">Ben</span>
+        <h1 className="mb-6 text-6xl uppercase leading-[0.9] md:text-8xl lg:text-9xl">
+          <span className="font-bold">Ben</span>
           <br />
-          <span className="font-extrabold gradient-text">Weinstein</span>
+          <span className="font-bold gradient-text">Weinstein</span>
         </h1>
         
         <p className="max-w-xl text-lg text-muted-foreground md:text-xl">
@@ -31,7 +31,7 @@ export const HeroSection = () => {
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-4 font-medium text-foreground transition-all hover:border-primary hover:text-primary"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-8 py-4 font-medium text-foreground transition-all hover:border-accent hover:text-accent"
           >
             Get in Touch
           </a>
