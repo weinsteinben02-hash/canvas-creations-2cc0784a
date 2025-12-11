@@ -32,7 +32,7 @@ export const BrandStrategySection = () => {
         <div className="mb-16">
           <p className="mb-2 font-medium text-accent">Framework</p>
           <h2 className="text-4xl uppercase md:text-5xl lg:text-6xl">
-            Brand Strategy
+            My Personal Brand Strategy
           </h2>
         </div>
 
