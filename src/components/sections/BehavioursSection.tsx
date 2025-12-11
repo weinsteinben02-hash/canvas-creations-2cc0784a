@@ -30,12 +30,12 @@ const behaviours = [
 
 export const BehavioursSection = () => {
   return (
-    <section id="behaviours" className="section-padding bg-primary text-primary-foreground">
+    <section id="behaviors" className="section-padding bg-primary text-primary-foreground">
       <div className="mx-auto max-w-6xl">
         <div className="mb-16">
           <p className="mb-2 font-medium text-accent">Values</p>
           <h2 className="text-4xl uppercase md:text-5xl lg:text-6xl">
-            Behaviours
+            Behaviors
           </h2>
         </div>
 

@@ -1,12 +1,12 @@
 export const AboutMeSection = () => {
   return (
-    <section id="about" className="section-padding bg-secondary/50">
+    <section id="story" className="section-padding bg-secondary/50">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="mb-2 font-medium text-accent">Introduction</p>
             <h2 className="text-4xl uppercase md:text-5xl lg:text-6xl">
-              About Me
+              My Story
             </h2>
           </div>
 

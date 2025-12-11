@@ -24,10 +24,10 @@ export const HeroSection = () => {
         
         <div className="mt-12 flex flex-wrap gap-4">
           <a
-            href="#projects"
+            href="#story"
             className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-4 font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-lg"
           >
-            View Work
+            My Story
           </a>
           <a
             href="#contact"
