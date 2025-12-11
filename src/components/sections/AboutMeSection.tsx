@@ -12,23 +12,17 @@ export const AboutMeSection = () => {
 
           <div className="flex flex-col justify-center space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I'm a student and creative strategist passionate about building brands that resonate. 
-              I believe in the power of strategic thinking combined with bold creative execution.
+              I've always experienced the world differently. When you move through environments that aren't always built for you, you learn to read people differently: tone, tension, and intention. That sensitivity became the foundation of how I understand the world.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              My approach blends analytical rigor with creative intuition—understanding the 
-              "why" behind every decision while pushing boundaries on the "how."
+              And eventually, how I understand brands.
             </p>
-            <div className="flex flex-wrap gap-3 pt-4">
-              {["Strategy", "Branding", "Design Thinking", "Storytelling"].map((skill) => (
-                <span
-                  key={skill}
-                  className="rounded-full bg-sky/20 px-4 py-2 text-sm font-medium text-primary"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I study marketing through a human lens. I'm drawn to how brands make people feel seen, included, and understood. I'm interested in the emotion behind behavior, the feeling before the thought, the memory before the message.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              That curiosity guides my work. It shapes how I approach strategy, how I tell stories, and how I create meaning in the things I make.
+            </p>
           </div>
         </div>
       </div>

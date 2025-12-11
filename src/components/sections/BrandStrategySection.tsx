@@ -1,27 +1,23 @@
 const strategyElements = [
   {
     label: "Ambition",
-    description: "The big-picture goal driving every decision forward.",
+    description: "To understand why things matter to people and help brands earn that meaning.",
   },
   {
     label: "Tension",
-    description: "The challenge or friction that creates opportunity.",
+    description: "There's always a space between what a brand tries to express and what a person actually feels. I work inside that space.",
   },
   {
     label: "Audience",
-    description: "Understanding who we're speaking to and why they care.",
-  },
-  {
-    label: "Purpose",
-    description: "The deeper meaning that gives the brand its soul.",
+    description: "Anyone committed to building brands with heart, not hype.",
   },
   {
     label: "Pillars",
-    description: "Core principles that guide every brand expression.",
+    description: "Observation, Empathy, Clarity, Adaptability, Curiosity",
   },
   {
     label: "Personality",
-    description: "The distinct voice and character that makes it human.",
+    description: "Enthusiastic, thoughtful, aware, detail-oriented, purpose-driven",
   },
 ];
 

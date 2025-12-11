@@ -2,28 +2,28 @@ const behaviours = [
   {
     category: "How I Work",
     items: [
-      "Start with research and listening",
-      "Iterate quickly, refine constantly",
       "Balance creativity with strategy",
-      "Document everything for clarity",
+      "Pay attention to emotion details",
+      "Move thoughtfully, not reactively",
+      "Understand feeling before analytics",
     ],
   },
   {
     category: "How I Communicate",
     items: [
-      "Direct and transparent",
-      "Ask questions before assuming",
-      "Share progress early and often",
-      "Give and receive feedback openly",
+      "Clarity, intention, and honestly",
+      "Translate complexity into meaning",
+      "Create conversations, not transactions",
+      "Connection over polish",
     ],
   },
   {
-    category: "How I Show Up",
+    category: "How I Problem Solve",
     items: [
-      "Curious and eager to learn",
-      "Collaborative, not competitive",
-      "Take ownership of outcomes",
-      "Bring energy and optimism",
+      "Approach with patience and positivity",
+      "Combine empathy and insight",
+      "Sift through noise to identify true meaning",
+      "Adapt quickly",
     ],
   },
 ];
