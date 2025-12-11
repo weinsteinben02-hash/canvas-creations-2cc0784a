@@ -1,28 +1,44 @@
 export const AboutMeSection = () => {
   return (
-    <section id="story" className="section-padding bg-secondary/50">
-      <div className="mx-auto max-w-6xl">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <p className="mb-2 font-medium text-accent">Introduction</p>
-            <h2 className="text-4xl uppercase md:text-5xl lg:text-6xl">
-              My Story
+    <section id="story" className="section-padding relative overflow-hidden">
+      {/* Background accent */}
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-secondary/50 to-transparent" />
+      
+      <div className="mx-auto max-w-6xl relative z-10">
+        <div className="grid gap-16 lg:grid-cols-12">
+          {/* Header - spans left side */}
+          <div className="lg:col-span-4 lg:sticky lg:top-32 lg:self-start">
+            <div className="inline-block px-4 py-1 border border-primary/30 text-primary text-xs tracking-[0.2em] uppercase mb-4">
+              Introduction
+            </div>
+            <h2 className="text-5xl uppercase md:text-6xl lg:text-7xl leading-[0.9]">
+              My
+              <br />
+              <span className="gradient-text">Story</span>
             </h2>
           </div>
 
-          <div className="flex flex-col justify-center space-y-6">
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              I've always experienced the world differently. When you move through environments that aren't always built for you, you learn to read people differently: tone, tension, and intention. That sensitivity became the foundation of how I understand the world.
+          {/* Content - flows on the right */}
+          <div className="lg:col-span-8 space-y-8">
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed font-light">
+              I've always experienced the world differently. When you move through environments that aren't always built for you, you learn to read people differently: tone, tension, and intention.
             </p>
+            
+            <div className="w-16 h-px bg-primary/50" />
+            
             <p className="text-lg text-muted-foreground leading-relaxed">
-              And eventually, how I understand brands.
+              That sensitivity became the foundation of how I understand the world. And eventually, how I understand brands.
             </p>
+            
             <p className="text-lg text-muted-foreground leading-relaxed">
               I study marketing through a human lens. I'm drawn to how brands make people feel seen, included, and understood. I'm interested in the emotion behind behavior, the feeling before the thought, the memory before the message.
             </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              That curiosity guides my work. It shapes how I approach strategy, how I tell stories, and how I create meaning in the things I make.
-            </p>
+            
+            <div className="pt-4 pl-8 border-l-2 border-primary/30">
+              <p className="text-lg text-foreground leading-relaxed italic">
+                That curiosity guides my work. It shapes how I approach strategy, how I tell stories, and how I create meaning in the things I make.
+              </p>
+            </div>
           </div>
         </div>
       </div>
