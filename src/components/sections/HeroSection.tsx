@@ -19,7 +19,7 @@ export const HeroSection = () => {
         </h1>
         
         <p className="max-w-xl text-lg text-muted-foreground md:text-xl">
-          Crafting bold brand identities that cut through the noise and leave a lasting impression.
+          Exploring the space between brand intention and human emotion
         </p>
         
         <div className="mt-12 flex flex-wrap gap-4">
