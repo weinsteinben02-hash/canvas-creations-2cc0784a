@@ -53,7 +53,8 @@ export const HeroSection = () => {
               <img 
                 src={benProfile}
                 alt="Ben Weinstein"
-                className="relative w-64 h-80 md:w-80 md:h-96 object-cover object-top rounded-lg border border-border/50 shadow-2xl"
+                className="relative w-64 h-80 md:w-80 md:h-96 object-cover rounded-lg border border-border/50 shadow-2xl"
+                style={{ objectPosition: 'center 35%' }}
               />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 backdrop-blur-sm border border-primary/30 rounded-lg flex items-center justify-center">
                 <span className="text-primary text-xs font-medium tracking-wider uppercase">2024</span>
