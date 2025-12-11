@@ -5,6 +5,11 @@ const strategyElements = [
     size: "large",
   },
   {
+    label: "Purpose",
+    description: "To bring sensitivity, clarity, and empathy into branding, making people feel seen and understood",
+    size: "large",
+  },
+  {
     label: "Tension",
     description: "There's always a space between what a brand tries to express and what a person actually feels. I work inside that space.",
     size: "large",
@@ -53,12 +58,12 @@ export const BrandStrategySection = () => {
 
         {/* Bento-style grid */}
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {/* Large cards for Ambition and Tension */}
-          {strategyElements.slice(0, 2).map((item, index) => (
+          {/* Large cards for Ambition, Purpose, and Tension */}
+          {strategyElements.slice(0, 3).map((item, index) => (
             <div
               key={item.label}
               className={`group relative p-8 md:p-10 bg-card border border-border transition-all duration-500 hover:border-primary/50 hover:bg-secondary/30 ${
-                index === 0 ? 'lg:col-span-2' : 'lg:row-span-2'
+                index === 0 ? 'lg:col-span-2' : ''
               }`}
             >
               <div className="absolute top-6 right-6 text-5xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors">
@@ -70,13 +75,13 @@ export const BrandStrategySection = () => {
           ))}
           
           {/* Smaller cards for the rest */}
-          {strategyElements.slice(2).map((item, index) => (
+          {strategyElements.slice(3).map((item, index) => (
             <div
               key={item.label}
               className="group relative p-6 md:p-8 bg-card border border-border transition-all duration-500 hover:border-primary/50 hover:bg-secondary/30"
             >
               <div className="absolute top-4 right-4 text-4xl font-bold text-primary/10 group-hover:text-primary/20 transition-colors">
-                {String(index + 3).padStart(2, "0")}
+                {String(index + 4).padStart(2, "0")}
               </div>
               <h3 className="mb-3 text-lg uppercase font-semibold text-primary">{item.label}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
